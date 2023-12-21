@@ -21,6 +21,8 @@
 		CE95C0A927DE77F700E6986B /* WordsJson.json in Resources */ = {isa = PBXBuildFile; fileRef = CE95C0A827DE77F700E6986B /* WordsJson.json */; };
 		CEBC3A5527CF8C2500D2B550 /* HowToUseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC3A5427CF8C2500D2B550 /* HowToUseViewController.swift */; };
 		CEF17C2C27C16877003D88E4 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF17C2B27C16877003D88E4 /* ResultsViewController.swift */; };
+		F5184A492B34946D00698467 /* db.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F5184A472B34946D00698467 /* db.xcdatamodeld */; };
+		F5184A4B2B3498C800698467 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5184A4A2B3498C800698467 /* CoreDataHelper.swift */; };
 		F53F89AF2B3390540009B173 /* AnalyticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53F89AE2B3390540009B173 /* AnalyticsViewController.swift */; };
 		F56BDD3F2B1238F3004D863D /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BDD3E2B1238F3004D863D /* UserDefaultsHelper.swift */; };
 		F56BDD412B123E8A004D863D /* WordListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BDD402B123E8A004D863D /* WordListTableViewCell.swift */; };
@@ -47,6 +49,8 @@
 		CE95C0A827DE77F700E6986B /* WordsJson.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = WordsJson.json; sourceTree = "<group>"; };
 		CEBC3A5427CF8C2500D2B550 /* HowToUseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToUseViewController.swift; sourceTree = "<group>"; };
 		CEF17C2B27C16877003D88E4 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		F5184A482B34946D00698467 /* db.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = db.xcdatamodel; sourceTree = "<group>"; };
+		F5184A4A2B3498C800698467 /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		F53F89AE2B3390540009B173 /* AnalyticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsViewController.swift; sourceTree = "<group>"; };
 		F56BDD3E2B1238F3004D863D /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
 		F56BDD402B123E8A004D863D /* WordListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListTableViewCell.swift; sourceTree = "<group>"; };
@@ -122,6 +126,7 @@
 				CE081BC227B29C7800CFD9D4 /* LaunchScreen.storyboard */,
 				CE081BC527B29C7800CFD9D4 /* Info.plist */,
 				CEBC3A5427CF8C2500D2B550 /* HowToUseViewController.swift */,
+				F5184A472B34946D00698467 /* db.xcdatamodeld */,
 				CE95C0A827DE77F700E6986B /* WordsJson.json */,
 			);
 			path = KobzaHelper;
@@ -148,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				F56BDD3E2B1238F3004D863D /* UserDefaultsHelper.swift */,
+				F5184A4A2B3498C800698467 /* CoreDataHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -282,6 +288,7 @@
 				CE081BB827B29C7700CFD9D4 /* AppDelegate.swift in Sources */,
 				F56BDD432B123F72004D863D /* WordListViewController.swift in Sources */,
 				CE95C0A727DE77AE00E6986B /* Word.swift in Sources */,
+				F5184A4B2B3498C800698467 /* CoreDataHelper.swift in Sources */,
 				CE081BCC27B2DB2B00CFD9D4 /* ViewModel.swift in Sources */,
 				CEF17C2C27C16877003D88E4 /* ResultsViewController.swift in Sources */,
 				F53F89AF2B3390540009B173 /* AnalyticsViewController.swift in Sources */,
@@ -291,6 +298,7 @@
 				CEBC3A5527CF8C2500D2B550 /* HowToUseViewController.swift in Sources */,
 				CE081BCE27B2DB4900CFD9D4 /* DataSource.swift in Sources */,
 				CE081BBA27B29C7700CFD9D4 /* SceneDelegate.swift in Sources */,
+				F5184A492B34946D00698467 /* db.xcdatamodeld in Sources */,
 				F56BDD412B123E8A004D863D /* WordListTableViewCell.swift in Sources */,
 				CE081BD127B4633500CFD9D4 /* ViewController.swift in Sources */,
 			);
@@ -518,6 +526,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F5184A472B34946D00698467 /* db.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F5184A482B34946D00698467 /* db.xcdatamodel */,
+			);
+			currentVersion = F5184A482B34946D00698467 /* db.xcdatamodel */;
+			path = db.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CE081BAC27B29C7700CFD9D4 /* Project object */;
 }

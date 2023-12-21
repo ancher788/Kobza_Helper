@@ -16,10 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UserDefaults.standard.set(true, forKey: "isAllowed")
 
-        if UserDefaultsHelper.shared.getWords().isEmpty {
+        if CoreDataHelper.shared.getWords().isEmpty {
             let initialDatabaseWords = DataSource.shared.words
             
-            UserDefaultsHelper.shared.saveWordsIfNotExist(initialDatabaseWords)
+            CoreDataHelper.shared.saveWordsIfNotExist(initialDatabaseWords)
         }
         
         return true

@@ -51,7 +51,7 @@ class WordListViewController: UIViewController, UITableViewDataSource, UITableVi
                     self?.tableView.reloadData()
                 }
                 
-                UserDefaultsHelper.shared.saveWords(self?.words ?? [])
+                CoreDataHelper.shared.saveWords(self?.words ?? [])
             } else {
                 // Вивести повідомлення про помилку, якщо слово не має 5 букв
                 let errorAlertController = UIAlertController(title: "Помилка", message: "Слово повинно містити рівно 5 букв", preferredStyle: .alert)
@@ -71,7 +71,7 @@ class WordListViewController: UIViewController, UITableViewDataSource, UITableVi
 
     
     func loadWords() {
-        words = UserDefaultsHelper.shared.getWords().sorted { $0.letters.joined() < $1.letters.joined() }
+        words = CoreDataHelper.shared.getWords().sorted { $0.letters.joined() < $1.letters.joined() }
         filteredWords = words
         tableView.reloadData()
     }

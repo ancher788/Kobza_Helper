@@ -14,7 +14,6 @@ class WordListTableViewCell: UITableViewCell {
     @IBOutlet weak var wordLabel: UILabel!
     
     func configure(with word: Word, at index: Int) {
-        // Форматуємо індекс у вигляді "0001", "0002" і так далі
         let formattedIndex = String(format: "%04d", index + 1)
         indexLabel.text = formattedIndex
         wordLabel.text = word.string
@@ -22,6 +21,5 @@ class WordListTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Ініціалізація коду для ячейки, якщо потрібно
     }
 }
